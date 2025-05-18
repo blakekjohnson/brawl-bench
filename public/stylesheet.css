@@ -1,0 +1,22 @@
+body {
+  background-color: #FFC72C;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #041E42;
+}
+
+#champion-list {
+  align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.champion {
+  padding: 1em;
+}
+

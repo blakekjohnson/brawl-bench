@@ -7,6 +7,7 @@ const championKeys = Object.keys(champions);
 
 const app = express();
 app.use(express.json());
+app.use(express.static('public'));
 
 function rollChampion(previousChampions) {
   const rolledKey =
@@ -20,7 +21,7 @@ function rollChampion(previousChampions) {
   return rolledChampion;
 }
 
-app.get('/api/roll', async (req, res) => {
+app.post('/api/roll', async (req, res) => {
   const { previousChampions = [] } = req.body;
 
   return res.status(200).send(rollChampion(previousChampions));
