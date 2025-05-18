@@ -1,0 +1,11 @@
+{
+  "name": "brawl-bench",
+  "packageManager": "yarn@4.6.0",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
